@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "sys_app.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -85,6 +85,10 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_LoRaWAN_Init();
+  while (1){
+    APP_PRINTF("Ming's gonna cry\n");
+    HAL_Delay(1000);
+  }
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
