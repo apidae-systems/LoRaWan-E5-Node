@@ -21,22 +21,22 @@ This guide is for LoRa-E5 mini/ LoRa-E5 Development Kit aiming at building sever
 
 - As the hardware design of LoRa-E5 series is a bit different with NUCLEO-WL55JC, the official STM32WL55JC development board from ST, developers need to reconfigure some gpios, to adapt the SDK example to LoRa-E5 series. We have already reconfigured gpios in this example, but we think it is nessary to point out the difference.
 
-|SDK Example Label|GPIO of NUCLEO-WL55JC|GPIO of LoRa-E5 Mini and LoRa-E5 Dev Board|
-|---------|---------------------|------------------------------------------|
-|RF_CTRL1|PC4|PA4|
-|RF_CTRL2|PC5|PA5|
-|RF_CTRL3|PC3|None|
-|BUT1|PA0|PB13 (Boot Button)|
-|BUT2|PA1|None|
-|BUT3|PC6|None|
-|LED1|PB15|None|
-|LED2|PB9|PB5|
-|LED3|PB11|None|
-|DBG1|PB12|PA0 (D0 Button)|
-|DBG2|PB13|PB10|
-|DBG3|PB14|PB3|
-|DBG4|PB10|PB4|
-|Usart|Usart2(PA2/PA3)|Usart1(PB6/PB7)|
+| SDK Example Label | GPIO of NUCLEO-WL55JC | GPIO of LoRa-E5 Mini and LoRa-E5 Dev Board |
+|-------------------|-----------------------|--------------------------------------------|
+| RF_CTRL1          | PC4                   | PA4                                        |
+| RF_CTRL2          | PC5                   | PA5                                        |
+| RF_CTRL3          | PC3                   | None                                       |
+| BUT1              | PA0                   | PB13 (Boot Button)                         |
+| BUT2              | PA1                   | None                                       |
+| BUT3              | PC6                   | None                                       |
+| LED1              | PB15                  | None                                       |
+| LED2              | PB9                   | PB5                                        |
+| LED3              | PB11                  | None                                       |
+| DBG1              | PB12                  | PA0 (D0 Button)                            |
+| DBG2              | PB13                  | PB10                                       |
+| DBG3              | PB14                  | PB3                                        |
+| DBG4              | PB10                  | PB4                                        |
+| Usart             | Usart2(PA2/PA3)       | Usart1(PB6/PB7)                            |
 
 ## Getting Started
 
