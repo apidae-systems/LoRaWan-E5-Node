@@ -97,12 +97,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	LED_control(1);
-	HAL_LPTIM_Counter_Start_IT(&hlptim1,
-				2000 * LSI_VALUE / 1000);
-    HAL_PWREx_EnterSTOP2Mode(PWR_STOPENTRY_WFI);
-    LED_control(0);
-    HAL_Delay(2000);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
