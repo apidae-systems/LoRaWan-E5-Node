@@ -1,0 +1,23 @@
+# ComChan Configuration File
+#
+# Platform: macOS config directory
+# Default location: ~/Library/Application Support/comchan/comchan.toml
+#
+# This file contains default settings for comchan serial monitor.
+# Command line arguments will override these settings.
+#
+# To use auto-detection, set port = "auto"
+# Available parity options: "none", "odd", "even"
+# Available flow control options: "none", "software", "hardware"
+
+port = "auto"
+plot = false
+baud = 115200
+data_bits = 8
+stop_bits = 1
+verbose = false
+parity = "none"
+timeout_ms = 500
+plot_points = 100
+flow_control = "none"
+reset_delay_ms = 1000

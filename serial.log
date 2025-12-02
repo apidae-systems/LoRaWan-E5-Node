@@ -1,0 +1,102 @@
+TX [1764708333.916]: AT
+RX [1764708334.032]: 
+RX [1764708334.032]: OK
+TX [1764708336.084]: ATZ
+RX [1764708336.197]: APP_VERSION:        V1.1.0
+RX [1764708336.197]: MW_LORAWAN_VERSION: V2.3.0
+RX [1764708336.197]: MW_RADIO_VERSION:   V1.1.0
+RX [1764708336.197]: 
+RX [1764708336.197]: 
+RX [1764708336.197]: 
+RX [1764708336.197]: ----------LoRaWAN_End_Node_FreeRTOS----------
+RX [1764708336.197]: 
+RX [1764708336.197]: 
+RX [1764708336.197]: ###### OTAA ######
+RX [1764708336.197]: ###### AppKey:      2B:7E:15:16:28:AE:D2:A6:AB:F7:15:88:09:CF:4F:3C
+RX [1764708336.197]: ###### NwkKey:      2B:7E:15:16:28:AE:D2:A6:AB:F7:15:88:09:CF:4F:3C
+RX [1764708336.197]: ###### ABP  ######
+RX [1764708336.197]: ###### AppSKey:     2B:7E:15:16:28:AE:D2:A6:AB:F7:15:88:09:CF:4F:3C
+RX [1764708336.197]: ###### NwkSKey:     2B:7E:15:16:28:AE:D2:A6:AB:F7:15:88:09:CF:4F:3C
+RX [1764708336.197]: ###### DevEui:  00:80:E1:15:00:17:C7:22
+RX [1764708336.197]: ###### AppEui:  01:01:01:01:01:01:01:01
+RX [1764708336.197]: ###### DevAddr: 06:09:7A:97
+RX [1764708336.197]: ATtention command interface
+RX [1764708336.198]: AT? to list all available functions
+TX [1764708341.842]: AT?
+RX [1764708341.959]: AT+<CMD>?        : Help on <CMD>
+RX [1764708341.960]: AT+<CMD>         : Run <CMD>
+RX [1764708341.960]: AT+<CMD>=<value> : Set the value
+RX [1764708341.960]: AT+<CMD>=?       : Get the value
+RX [1764708341.960]: ATZ Trig a MCU reset
+RX [1764708341.960]: AT+VL=<Level><CR>. Set the Verbose Level=[0:Off .. 3:High]
+RX [1764708341.960]: AT+LTIME Get the local time in UTC format
+RX [1764708341.960]: AT+APPEUI=<XX:XX:XX:XX:XX:XX:XX:XX><CR>. Get or Set the App Eui
+RX [1764708341.960]: AT+NWKKEY=<XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX><CR>: Get or Set the Network Key
+RX [1764708341.960]: AT+APPKEY=<XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX><CR>: Get or Set the Application Key
+RX [1764708341.960]: AT+NWKSKEY=<XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX><CR>: Get or Set the Network Session Key
+RX [1764708341.960]: AT+APPSKEY=<XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX><CR>: Get or Set the Application Session Key
+RX [1764708341.960]: AT+DADDR=<XXXXXXXX><CR>. Get or Set the Device address
+RX [1764708341.960]: AT+DEUI=<XX:XX:XX:XX:XX:XX:XX:XX><CR>. Get or Set the Device EUI
+RX [1764708341.960]: AT+NWKID=<NwkID><CR>. Get or Set the Network ID=[0..127]
+RX [1764708341.960]: AT+JOIN=<Mode><CR>. Join network with Mode=[0:ABP, 1:OTAA]
+RX [1764708341.972]: AT+LINKC. Piggyback a Link Check Request to the next uplink
+RX [1764708341.972]: AT+SEND=<Port>:<Ack>:<Payload><CR>. Send binary data with the application Port=[1..199] and Ack=[0:unconfirmed, 1:confirmed]
+RX [1764708341.972]: AT+VER Get the FW version
+RX [1764708341.972]: AT+ADR=<ADR><CR>. Get or Set the Adaptive Data Rate setting ADR=[0:off, 1:on]
+RX [1764708341.972]: AT+DR=<DataRate><CR>. Get or Set the Tx DataRate=[0..7]
+RX [1764708341.985]: AT+BAND=<BandID><CR>. Get or Set the Active Region BandID=[0:AS923, 1:AU915, 2:CN470, 3:CN779, 4:EU433, 5:EU868, 6:KR920, 7:IN865, 8:US915, 9:RU864]
+RX [1764708341.998]: AT+CLASS=<Class><CR>. Get or Set the Device Class=[A, B, C]
+RX [1764708341.998]: AT+DCS=<DutyCycle><CR>. Get or Set the ETSI DutyCycle=[0:disable, 1:enable] - Only for testing
+RX [1764708342.010]: AT+JN1DL=<Delay><CR>. Get or Set the Join Accept Delay between the end of the Tx and the Join Rx Window 1 in ms
+RX [1764708342.023]: AT+JN2DL=<Delay><CR>. Get or Set the Join Accept Delay between the end of the Tx and the Join Rx Window 2 in ms
+RX [1764708342.035]: AT+RX1DL=<Delay><CR>. Get or Set the delay between the end of the Tx and the Rx Window 1 in ms
+RX [1764708342.035]: AT+RX2DL=<Delay><CR>. Get or Set the delay between the end of the Tx and the Rx Window 2 in ms
+RX [1764708342.048]: AT+RX2DR=<DataRate><CR>. Get or Set the Rx2 window DataRate=[0..7]
+RX [1764708342.048]: AT+RX2FQ=<Freq><CR>. Get or Set the Rx2 window Freq in Hz
+RX [1764708342.060]: AT+TXP=<Power><CR>. Get or Set the Transmit Power=[0..15](valid range according to region)
+RX [1764708342.061]: AT+PGSLOT=<Period><CR>. Set or Get the unicast ping slot Period=[0:1s .. 7:128s](=2^Period)
+RX [1764708342.073]: AT+TTONE Starts RF Tone test
+RX [1764708342.073]: AT+TRSSI Starts RF RSSI tone test
+RX [1764708342.086]: AT+TCONF=<Freq in Hz>:<Power in dBm>:<Lora Bandwidth <0 to 6>, or FSK Bandwidth in Hz>:<Lora SF or FSK datarate (bps)>:<CodingRate 4/5, 4/6, 4/7, 4/8>:
+RX [1764708342.097]:          <Lna>:<PA Boost>:<Modulation 0:FSK, 1:Lora, 2:BPSK>:<PayloadLen in Bytes>:<FskDeviation in Hz>:<LowDrOpt 0:off, 1:on, 2:Auto>:
+RX [1764708342.109]:          <BTproduct: 0:no Gaussian Filter Applied, 1:BT=0,3, 2:BT=0,5, 3:BT=0,7, 4:BT=1><CR>. Configure RF test
+RX [1764708342.109]: AT+TTX=<PacketNb><CR>. Starts RF Tx test: Nb of packets sent
+RX [1764708342.109]: AT+TRX=<PacketNb><CR>. Starts RF Rx test: Nb of packets expected
+RX [1764708342.122]: AT+CERTIF=<Mode><CR>. Set the module in LoraWan Certification with Join Mode=[0:ABP, 1:OTAA]
+RX [1764708342.135]: AT+TTH=<Fstart>,<Fstop>,<Fdelta>,<PacketNb><CR>. Starts RF Tx hopping test from Fstart to Fstop in Hz or MHz, Fdelta in Hz
+RX [1764708342.135]: AT+TOFF Stops on-going RF test
+RX [1764708342.147]: AT+BAT Get the battery Level in mV
+RX [1764708342.147]: 
+RX [1764708342.147]: OK
+TX [1764708350.355]: AT+VER
+RX [1764708350.473]: 
+RX [1764708350.473]: AT_ERROR
+TX [1764708355.089]: AT+VER?
+RX [1764708355.204]: AT+VER Get the FW version
+RX [1764708355.204]: 
+RX [1764708355.204]: OK
+TX [1764708370.603]: AT+BAT?
+RX [1764708370.721]: AT+BAT Get the battery Level in mV
+RX [1764708370.721]: 
+RX [1764708370.721]: OK
+TX [1764708379.962]: AT+JOIN?
+RX [1764708380.080]: AT+JOIN=<Mode><CR>. Join network with Mode=[0:ABP, 1:OTAA]
+RX [1764708380.080]: 
+RX [1764708380.080]: OK
+TX [1764708391.889]: AT+JOIN=0
+RX [1764708392.003]: +EVT:JOINED
+RX [1764708392.003]: 
+RX [1764708392.003]: OK
+TX [1764708418.180]: AT+BAND+8
+RX [1764708418.298]: 
+RX [1764708418.298]: AT_ERROR
+TX [1764708429.588]: AT+BAND=8
+RX [1764708429.706]: 
+RX [1764708429.706]: AT_PARAM_ERROR
+TX [1764708450.752]: AT+BAND=8:US915
+RX [1764708450.870]: 
+RX [1764708450.870]: AT_PARAM_ERROR
+TX [1764708463.706]: AT+BAND=US915
+RX [1764708463.823]: 
+RX [1764708463.823]: AT_PARAM_ERROR
+ERROR [1764708467.327]: Serial read error: Interrupted system call
